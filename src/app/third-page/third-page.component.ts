@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThirdPageComponent implements OnInit {
 
+  options: Array<any>;
+  selectedValue: string;
   constructor() { }
 
   ngOnInit() {
+    this.options = [
+      { value: '1', label: 'Option 1' },
+      { value: '2', label: 'Option 2' },
+      { value: '3', label: 'Option 3' }
+      ];
   }
 
 }
