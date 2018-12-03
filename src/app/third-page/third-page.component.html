@@ -1,3 +1,15 @@
 <p>
-  third-page works!
+  Angular material Select works!
 </p>
+<hr>
+
+<mat-form-field>
+  <mat-select placeholder="Select Option" [(ngModel)]="selectedValue">
+    <mat-option> None </mat-option>
+    <mat-option *ngFor="let option of options" [value]="option.value">
+      {{option.label}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<p> Selected Option Value is : {{selectedValue}} </p>
