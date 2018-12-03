@@ -13,12 +13,6 @@ import { SecondPageComponent } from './second-page/second-page.component';
 import { ThirdPageComponent } from './third-page/third-page.component';
 import { FormsModule } from '@angular/forms';
 
-const appRoutes: Routes = [
-  { path: 'first-page', component: FirstPageComponent },
-  { path: 'second-page', component: SecondPageComponent },
-  { path: 'third-page', component: ThirdPageComponent }
-];
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,8 +35,7 @@ const appRoutes: Routes = [
     MatNativeDateModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule,
-    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
   providers: [
     MatDatepickerModule
